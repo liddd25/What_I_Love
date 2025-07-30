@@ -1,0 +1,146 @@
+/*general reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Patrick Hand", cursive ,sans-serif;
+    font-weight: 700;
+}
+/* hero section background*/
+.site_header{
+    min-height:100vh;
+    width: 100%;
+    background:url(../images/dost_1.jpg) center center / cover no-repeat fixed;
+    position: relative;    
+}
+
+nav{
+    display: flex;
+    padding: 20px 5px;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.nav_links ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 72px;
+    margin-right: 44px;
+    margin-top: 14px;
+    padding: 8px 12px;
+    position: relative; 
+}
+.nav_links ul li a{
+  color:rgb(188, 139, 98);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+/*underline effect*/
+.nav_links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: rgb(202, 114, 7);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav_links ul li:hover::after{
+  width: 100%;
+}
+.text_box{
+  width:90%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+
+}
+.text_box h1{
+  font-size: 7rem;
+  color:rgb(145, 80, 23);
+}
+.text_box p,h2{
+  margin-bottom: 10px ;
+  font-size: 1.5rem;
+  color: rgb(206, 157, 98);
+}
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  color:bisque;
+  border:1px solid blanchedalmond;
+  padding: 10px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.btn:hover{
+  border:1px solid blanchedalmond;
+  background:rgb(158, 118, 57) ;
+  transition: 1s;
+
+}
+.description{
+  width:80%;
+  margin:auto;
+  text-align:center ;
+  padding-top: 100px;
+}
+h1{
+  font-size:64px ;
+}
+blockquote{
+  font-size: 24px;
+  line-height: 22px;
+  padding: 10px;
+}
+.row{
+  margin-top: 5%;
+  display:flex ;
+  justify-content: space-between;
+}
+.column{
+  flex-basis: 31%;
+  background: rgb(190, 124, 80);
+  border-radius:10px;
+  margin-bottom: 5%;
+  padding:20px 12px;
+}
+h3{
+  text-align: center;
+  text-transform:capitalize ;
+}
+.column:hover{
+  box-shadow: 0 0 20px 0  rgb(174, 118, 81);
+
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 15rem;
+  font-size: 1rem;
+  background-color: rgb(213, 125, 78);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+} 
+/*adding links into icons*/
+.icons a{
+  color:rgb(124, 83, 50);
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.icons a:visited{
+  color: rgb(60, 30, 1);
+}
+.icons a:hover {
+  color:black; 
+}
+.icons a:active{
+  color:rgb(156, 71, 11)
+}

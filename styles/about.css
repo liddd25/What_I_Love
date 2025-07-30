@@ -1,2 +1,95 @@
 /*importing google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
+/*general reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Edu SA Hand", cursive, sans-serif;
+    font-weight: 600;
+}
+.site_header{
+    min-height:100vh;
+    width: 100%;
+    background-image: linear-gradient((#975d06), rgb(160, 82, 21)), ;
+    background-position:center ;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color:rgb(169, 115, 50) ;    
+}
+h1{
+    margin-top: 10rem;
+}
+
+nav{
+    display: flex;
+    padding: 20px 5px;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.nav_links ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 72px;
+    margin-right: 44px;
+    margin-top: 14px;
+    padding: 8px 12px;
+    position: relative; 
+}
+.nav_links ul li a{
+  color:rgb(188, 139, 98);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+/*underline effect*/
+.nav_links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: rgb(202, 114, 7);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav_links ul li:hover::after{
+  width: 100%;
+}
+.about{
+  width:80%;
+  margin:auto;
+  text-align:center ;
+  padding-top: 100px;
+}
+h2{
+  font-size:64px ;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 15rem;
+  font-size: 12px;
+  background-color: rgba(163, 80, 28, 0.919);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+} 
+/*adding links into icons*/
+.icons a{
+  color:rgb(124, 83, 50);
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.icons a:visited{
+  color: rgb(60, 30, 1);
+}
+.icons a:hover {
+  color:black; 
+}
+.icons a:active{
+  color:rgb(156, 71, 11)
+}

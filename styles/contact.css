@@ -11,7 +11,7 @@
 .site_header{
     min-height:100vh;
     width: 100%;
-    background:url(../images/dost_4.jpg) center center / cover no-repeat fixed;
+    background: center center / cover no-repeat fixed;
     position: relative;    
 }
 

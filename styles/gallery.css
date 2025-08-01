@@ -1,2 +1,160 @@
 /*importing google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Edu SA Hand", cursive, sans-serif;
+    font-weight: 600;
+}
+.site_header{
+    min-height:100vh;
+    width: 100%;
+    background: rgb(217, 171, 103) url(../images/dost_7.jpg) center center / cover no-repeat fixed;
+    text-align: center;
+    color:rgba(110, 63, 5, 0.789) ;    
+}
+h1{
+    margin-top: 10rem;
+}
+
+nav{
+    display: flex;
+    padding: 20px 5px;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.nav_links ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 72px;
+    margin-right: 44px;
+    margin-top: 14px;
+    padding: 8px 12px;
+    position: relative; 
+}
+.nav_links ul li a{
+  color:rgb(188, 139, 98);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+/*underline effect*/
+.nav_links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: rgb(202, 114, 7);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav_links ul li:hover::after{
+  width: 100%;
+}
+ h1 {
+  text-align: center;
+  color: bisque;
+  margin-bottom: 40px;
+}
+
+.book_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+}
+
+.book {
+  background-color:white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.book:hover {
+  transform: translateY(-5px);
+}
+
+.book img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.book_info {
+  padding: 15px;
+}
+
+.book_info h2 {
+  font-size: 1.4rem;
+  margin: 0 0 10px;
+  color:black;
+}
+
+.review_toggle summary{
+   cursor: pointer;
+   background-color: #d04c17;
+   color: white;
+   padding: 10px;
+   border-radius: 4px;
+   font-size: 1rem;
+   list-style: none;
+   margin-bottom: 10px;
+   user-select: none;
+   transition: background-color 0s ease;
+}
+.review_toggle[open] summary{
+    background-color: #b96a29;
+} 
+
+.review {
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+  border-radius: 0 0 8px 8px;
+}
+
+.review h4 {
+  margin-top: 0;
+  color: black;
+}
+
+.review ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.review li {
+  margin-bottom: 8px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30rem;
+  font-size: 0.7rem;
+  background-color: #b96a29;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+} 
+/*adding links into icons*/
+.icons a{
+  color:rgb(124, 83, 50);
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.icons a:visited{
+  color: rgb(60, 30, 1);
+}
+.icons a:hover {
+  color:black; 
+}
+.icons a:active{
+  color:rgb(156, 71, 11)
+}

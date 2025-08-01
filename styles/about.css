@@ -11,7 +11,7 @@
 .site_header{
     min-height:100vh;
     width: 100%;
-    background-image: linear-gradient((#975d06), rgb(160, 82, 21)), ;
+    background-image:  url(../images/dost_2.jpg);
     background-position:center ;
     background-size: cover;
     position: relative;

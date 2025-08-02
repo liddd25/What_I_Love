@@ -1,52 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
 /*general reset*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:"Indie Flower", cursive, sans-serif;
-    font-weight: 400;
-    font-weight: 700;
+    font-family:"Edu SA Hand", cursive, sans-serif;
+    font-weight: 600;
 }
-.site_header{
-    min-height:100vh;
-    width: 100%;
-    background: center center / cover no-repeat fixed;
-    position: relative;    
+.contact{
+    min-height: 100vh;
+    background-color: rgba(137, 74, 35, 0.853);
+    padding:50px;
+    text-align: center;
 }
 
-nav{
-    display: flex;
-    padding: 20px 5px;
-    justify-content: center;
-    gap: 50px;
+.container {
+    margin: 0 auto;
+
+}
+.container h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color:rgb(90, 54, 18)
+}
+.contact_wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:30px;    
+}
+.contact_form h3{
+    font-size: 24px;
     margin-bottom: 20px;
-    align-items: center;
+    color:rgb(90, 54, 18)
 }
-.nav_links ul li {
-    list-style: none;
+.form_group{
+    margin-bottom: 30px;
+}
+input, textarea{
+    width:100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(197, 159, 112);
+    color:blanchedalmond
+}
+input:focus,
+textarea:focus{
+    outline:none;
+   box-shadow:0 0 8px black;
+}
+button{
     display: inline-block;
-    margin-left: 72px;
-    margin-right: 44px;
-    margin-top: 14px;
-    padding: 8px 12px;
-    position: relative; 
+    padding: 12px 24px;
+    background-color: rgb(122, 70, 18);
+    color:blanchedalmond ;
+    border:none;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
-.nav_links ul li a{
-  color:rgb(188, 139, 98);
-  text-decoration: none;
-  font-size: 1.5rem;
+button:hover{
+  background-color: rgb(193, 114, 18);     
 }
-/*underline effect*/
-.nav_links ul li::after{
-  content: '';
-  width: 0%;
-  height: 2px;
-  background: rgb(202, 114, 7);
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-.nav_links ul li:hover::after{
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 15rem;
+  font-size: 0.75rem;
+  background-color: rgb(208, 127, 73);
+  position: relative;
+  bottom: 0;
   width: 100%;
+} 
+/*adding links into icons*/
+.icons a{
+  color:rgb(124, 83, 50);
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.icons a:visited{
+  color: rgb(60, 30, 1);
+}
+.icons a:hover {
+  color:black; 
+}
+.icons a:active{
+  color:rgb(156, 71, 11)
 }

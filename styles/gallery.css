@@ -55,7 +55,7 @@ nav{
 }
  h1 {
   text-align: center;
-  color: bisque;
+  color: rgb(182, 137, 82);
   margin-bottom: 40px;
 }
 
@@ -113,14 +113,14 @@ nav{
 } 
 
 .review {
-  background-color: #f9f9f9;
+  background-color:rgb(228, 184, 118);
   border-top: 1px solid #eee;
   border-radius: 0 0 8px 8px;
 }
 
 .review h4 {
   margin-top: 0;
-  color: black;
+  color:rgb(173, 95, 27);
 }
 
 .review ul {
@@ -157,4 +157,76 @@ footer {
 }
 .icons a:active{
   color:rgb(156, 71, 11)
+}
+@media (max-width: 992px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav_links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav_links ul li {
+    margin: 10px 0;
+  }
+
+  .site_header h1 {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+
+  .book_list {
+    gap: 40px;
+  }
+
+  .book {
+    width: 90%;
+  }
+
+  footer {
+    margin-top: 8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .site_header h1 {
+    font-size: 1.5rem;
+  }
+
+  .book_info h2 {
+    font-size: 1.2rem;
+  }
+
+  .review_toggle summary {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .review ul {
+    padding-left: 16px;
+  }
+
+  .review li {
+    font-size: 0.9rem;
+  }
+
+  .book {
+    width: 95%;
+  }
+
+  footer {
+    font-size: 0.7rem;
+    padding: 16px;
+    margin-top: 5rem;
+  }
+
+  .icons a {
+    font-size: 1.2rem;
+    margin: 0 6px;
+  }
 }

@@ -122,7 +122,7 @@ footer {
   padding: 20px;
   margin-top: 15rem;
   font-size: 1rem;
-  background-color: rgb(213, 125, 78);
+  background-color: rgba(198, 124, 71, 0.918);
   position: relative;
   bottom: 0;
   width: 100%;
@@ -143,4 +143,74 @@ footer {
 }
 .icons a:active{
   color:rgb(156, 71, 11)
+}
+@media (max-width: 992px) {
+  .text_box h1 {
+    font-size: 4rem;
+  }
+
+  .nav_links ul li {
+    margin: 0 20px;
+  }
+
+  .text_box p, .text_box h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 8px 24px;
+    font-size: 1rem;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .text_box h1 {
+    font-size: 3rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav_links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav_links ul li {
+    margin: 10px 0;
+  }
+
+  .description {
+    width: 95%;
+    padding-top: 60px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  blockquote {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+
+  .icons a {
+    font-size: 1.2rem;
+  }
 }

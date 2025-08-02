@@ -93,3 +93,71 @@ footer {
 .icons a:active{
   color:rgb(156, 71, 11)
 }
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.8rem;
+    margin-top: 6rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .about {
+    width: 90%;
+    padding-top: 60px;
+  }
+
+  .about p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav_links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav_links ul li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .about {
+    width: 95%;
+    padding-top: 40px;
+  }
+
+  .about p {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    margin-top: 8rem;
+    padding: 16px;
+  }
+
+  .icons a {
+    font-size: 1.2rem;
+    margin: 0 6px;
+  }
+}
